@@ -4,8 +4,8 @@ import os
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
 OWNER_ID = int(os.environ.get("OWNER_ID", "0"))
 
-# 📢 القناة الإجبارية
-MUST_JOIN_CHANNEL = "@HFEE55"
+# 📢 اسم قناة الاشتراك الإجباري (ضع اسم قناتك هنا مع @)
+CHANNEL_USERNAME = os.environ.get("CHANNEL_USERNAME", "@YourChannelUsername")
 
 # 📂 مسارات التخزين
 DATA_DIR = "data"
@@ -22,7 +22,7 @@ WELCOME_MSG = (
     "↳︎𝐄𝐯𝐞𝐫𝐲 𝐦𝐨𝐯𝐞 𝐢𝐬 𝐚 𝐝𝐞𝐜𝐢𝐬𝐢𝐨𝐧, 𝐞𝐯𝐞𝐫𝐲 𝐦𝐚𝐭𝐜𝐡 𝐚 𝐛𝐚𝐭𝐭𝐥𝐞 𝐨𝐟 𝐦𝐢𝐧𝐝𝐬•\n"
     "↳︎𝐅𝐫𝐨𝐦 𝐭𝐡𝐞 𝐟𝐢𝐫𝐬𝐭 𝐦𝐨𝐯𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐟𝐢𝐧𝐚𝐥 𝐜𝐡𝐞𝐜𝐤𝐦𝐚𝐭𝐞... 𝐰𝐫𝐢𝐭𝐞 𝐲𝐨𝐮𝐫 𝐨𝐰𝐧 𝐥𝐞𝐠𝐞𝐧𝐝•\n"
     "↳︎𝐀𝐫𝐞 𝐲𝐨𝐮 𝐭𝐡𝐞 𝐧𝐞𝐱𝐭 𝐜𝐡𝐚𝐦𝐩𝐢𝐨𝐧?!!•\n\n"
-    "↳︎𝐃𝐞𝐯 @hihi_jl | @khobeib00"
+    "↳︎𝐃𝐞𝐯 @khobeib0"
 )
 
 HELP_MSG = (
@@ -33,4 +33,3 @@ HELP_MSG = (
     "• `/support` أو `/الدعم` — تواصل مع المالك\n"
     "• `/help` — هذه القائمة\n"
 )
-
