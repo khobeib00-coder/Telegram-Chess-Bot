@@ -1,3 +1,9 @@
+# ══════════════════════════════════════════════════════
+#                 ⚔️ قبول وإلغاء التحديات
+# ══════════════════════════════════════════════════════
+@bot.callback_query_handler(func=lambda c: (c.data or "").startswith("ga|"))
+def cb_group_accept(c):
+    if not rl_callback(c):
         return
     uid = c.from_user.id
     if is_banned(uid):
